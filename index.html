@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Triângulo Analyzer</title>
+</head>
+<body>
+    <header>
+        <h1>Triângulo Analyzer</h1>
+    </header>
+    <main class="container">
+        <section class="calculator">
+            <label for="input1">Valor 1:</label>
+            <input type="number" id="input1">
+            <select id="select1">
+                <option value="side">Lado</option>
+                <option value="angle">Ângulo</option>
+            </select>
+        
+            <label for="input2">Valor 2:</label>
+            <input type="number" id="input2">
+            <select id="select2">
+                <option value="side">Lado</option>
+                <option value="angle">Ângulo</option>
+            </select>
+        
+            <label for="input3">Valor 3:</label>
+            <input type="number" id="input3">
+            <select id="select3">
+                <option value="side">Lado</option>
+                <option value="angle">Ângulo</option>
+            </select>
+        
+            <button onclick="analyzeTriangle()">Analisar Triângulo</button>
+        
+            <div id="result"></div>
+            <div id="graph"></div> <!-- Adiciona esta linha -->
+        </section>
+
+        <section class="info">
+            <div id="userGuide">
+                <h2>Guia do Usuário</h2>
+                <p>Insira os valores nos campos acima e selecione se são lados ou ângulos.</p>
+                <p>O resultado será exibido abaixo, indicando o tipo de triângulo e o tipo de ângulo.</p>
+            </div>
+
+            <div id="educationalInfo">
+                <h2>Informações Educacionais</h2>
+                <p>Um triângulo é uma figura geométrica com três lados e três ângulos. A soma dos ângulos internos de um triângulo é sempre 180 graus.</p>
+                <p>Os tipos de ângulos em um triângulo são:</p>
+                <ul>
+                    <li>Angulo Agudo: Menor que 90 graus (forma um triângulo acutângulo).</li>
+                    <li>Angulo Obtuso: Maior que 90 graus (forma um triângulo obtusângulo).</li>
+                    <li>Angulo Reto: Igual a 90 graus (forma um triângulo retângulo).</li>
+                    <li>Angulo Raso: Igual a 180 graus.</li>
+                    <li>Angulo Giro: Igual a 360 graus (uma volta inteira).</li>
+                </ul>
+            </div>
+
+            <div id="faq">
+                <h2>Perguntas Frequentes</h2>
+                <p>Pergunta 1: Como usar a aplicação?</p>
+                <p>Resposta: Insira os dados do triângulo e clique em "Analisar Triângulo".</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

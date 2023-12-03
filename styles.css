@@ -1,0 +1,80 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.container {
+    display: flex;
+    margin-top: 10px;
+    padding: 0 10px; 
+}
+
+.calculator,
+.info {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin: 0 5px; 
+    width: 30%;
+}
+.info {
+    width: 65%; 
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: calc(100% - 10px);
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#graph {
+    margin-top: 10px;
+    text-align: center; /* Adiciona esta linha para centralizar a imagem */
+}
+
+#result {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Adiciona estas linhas para ajustar o tamanho da imagem */
+#graph img {
+    max-width: 100%;
+    height: auto;
+    max-height: 100px; /* Altura máxima desejada */
+}
+
+#userGuide,
+#educationalInfo,
+#faq {
+    margin-top: 10px;
+}
+
+.hidden {
+    display: none;
+}
